@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv('mantenimiento.csv')
+df = pd.read_csv('data/mantenimiento.csv')
 
 df.info()
 print(df.isnull().sum())
@@ -35,4 +35,4 @@ print(f"\nMedia de consumo calculada: {media_consumo:.2f}")
 print(df_mantenimiento[['Tipo', 'Consumo_Estimado', 'Gasto_Excesivo']].head())
 
 #Guardar el dataset para el análisis posterior
-df_mantenimiento.to_csv('mantenimiento_procesado.csv', index=False)
+df_mantenimiento.to_csv('data/mantenimiento_procesado.csv', index=False)
